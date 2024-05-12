@@ -165,7 +165,7 @@ int main(void)
 		//model
 		mat4 model = mat4(1.0f);
 		//model rotation
-		model = rotate(model, ANGLE += 0.03f, normalize(vec3(1.0f, 1.0f, 1.0f)));
+		model = rotate(model, ANGLE -= 0.03f, normalize(vec3(1.0f, -1.0f, 1.0f)));
 		//MVP
 		mat4 mvp = projection * view * model;
 
